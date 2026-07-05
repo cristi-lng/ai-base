@@ -1,0 +1,16 @@
+{
+  "name": "ai-base",
+  "version": "0.1.0",
+  "description": "Base AI tools for pi",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "extensions"
+    ],
+    "skills": [
+      "skills"
+    ]
+  }
+}
