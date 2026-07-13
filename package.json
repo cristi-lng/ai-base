@@ -1,16 +1,25 @@
 {
   "name": "ai-base",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Base AI tools for pi",
   "keywords": [
     "pi-package"
   ],
+  "dependencies": {
+    "pi-web-access": "0.13.0",
+    "pi-fork": "github:elpapi42/pi-fork#4a09af4ef5276d68f0d4321d033fa0f3f0ef2954",
+    "pi-mono-sentinel": "1.13.0"
+  },
   "pi": {
     "extensions": [
-      "extensions"
+      "extensions",
+      "node_modules/pi-web-access/index.ts",
+      "node_modules/pi-fork/src/index.ts",
+      "node_modules/pi-mono-sentinel/index.ts"
     ],
     "skills": [
-      "skills"
+      "skills",
+      "node_modules/pi-web-access/skills"
     ]
   }
 }
