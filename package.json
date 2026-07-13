@@ -1,6 +1,6 @@
 {
   "name": "ai-base",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Base AI tools for pi",
   "keywords": [
     "pi-package"
@@ -14,7 +14,6 @@
     "extensions": [
       "extensions",
       "node_modules/pi-web-access/index.ts",
-      "node_modules/pi-fork/src/index.ts",
       "node_modules/pi-mono-sentinel/index.ts"
     ],
     "skills": [
