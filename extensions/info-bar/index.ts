@@ -161,7 +161,7 @@ export default function (pi: ExtensionAPI) {
         const costStr = purple(`$${stats.cost.toFixed(3)}`);
         const ctxStr = purple(formatContext(ctx));
         const tokensStr = purple(`↑${fmt(stats.input)} ↓${fmt(stats.output)} ⊕${fmt(stats.cacheRead)}`);
-        const line1 = ` ${costStr}${sep}${ctxStr}${sep}${tokensStr}`;
+        const line1 = `${costStr}${sep}${ctxStr}${sep}${tokensStr}`;
 
         // Line 2: [spinner] model · thinking-level (dim)
         const model = ctx.model;
@@ -169,13 +169,13 @@ export default function (pi: ExtensionAPI) {
         const thinkingStr = pi.getThinkingLevel();
         const spinnerStr = isWorking ? purple(spinnerFrames[spinnerIndex]) + ' ' : '';
         const modelLine = thinkingStr
-          ? ` ${spinnerStr}${thm.fg('dim' as any, modelStr)}${sep}${thm.fg('dim' as any, thinkingStr)}`
-          : ` ${spinnerStr}${thm.fg('dim' as any, modelStr)}`;
+          ? `${spinnerStr}${thm.fg('dim' as any, modelStr)}${sep}${thm.fg('dim' as any, thinkingStr)}`
+          : `${spinnerStr}${thm.fg('dim' as any, modelStr)}`;
 
         // Line 3: ~/cwd (branch) (dim)
         const cwdStr = formatCwd(ctx.cwd);
         const branchStr = branch ? ` (${branch})` : '';
-        const line3 = ` ${thm.fg('dim' as any, cwdStr + branchStr)}`;
+        const line3 = `${thm.fg('dim' as any, cwdStr + branchStr)}`;
 
         lines.push(truncateToWidth(line1, width));
         lines.push(truncateToWidth(modelLine, width));
