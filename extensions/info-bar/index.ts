@@ -139,7 +139,7 @@ export default function (pi: ExtensionAPI) {
 
     class InfoBar extends CustomEditor {
       constructor(tui: TUI, theme: EditorTheme, keybindings: KeybindingsManager) {
-        super(tui, theme, keybindings, { paddingX: 1 });
+        super(tui, theme, keybindings, { paddingX: 0 });
         activeTui = tui;
       }
 
@@ -166,7 +166,7 @@ export default function (pi: ExtensionAPI) {
         // Line 2: [spinner] model · thinking-level (dim)
         const model = ctx.model;
         const modelStr = model ? (model.name ?? model.id) : 'no-model';
-        const thinkingStr = ctx.getThinkingLevel?.() ?? '';
+        const thinkingStr = pi.getThinkingLevel();
         const spinnerStr = isWorking ? purple(spinnerFrames[spinnerIndex]) + ' ' : '';
         const modelLine = thinkingStr
           ? ` ${spinnerStr}${thm.fg('dim' as any, modelStr)}${sep}${thm.fg('dim' as any, thinkingStr)}`
