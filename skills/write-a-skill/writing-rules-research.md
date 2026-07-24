@@ -6,7 +6,7 @@ Evidence for writing the rules, instructions, and constraints inside a skill. Re
 
 5,000+ controlled runs of Claude Code (Claude Opus 4.6) on SWE-bench Verified, plus a corpus analysis of 679 rule files (25,532 rules) from GitHub.
 
-**Scope and strength.** All results are for one agent/model on Python bug-fix tasks, and most are *directional, not statistically significant* (n=35–58). The authors frame them as "scoped empirical findings rather than universal laws." Treat them as priors, not proof.
+**Scope and strength.** All results are for one agent/model on Python bug-fix tasks, and most are _directional, not statistically significant_ (n=35–58). The authors frame them as "scoped empirical findings rather than universal laws." Treat them as priors, not proof.
 
 ### Findings
 
