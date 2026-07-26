@@ -55,7 +55,9 @@ function getSessionStats(ctx: ExtensionContext): {
   let output = 0;
   let cacheRead = 0;
   let cost = 0;
-  for (const e of ctx.sessionManager.getBranch()) {
+  // Sum ALL entries (branch-independent) so totals survive handoffs/resets;
+  // getBranch() would drop abandoned branches and reset the odometer.
+  for (const e of ctx.sessionManager.getEntries()) {
     if (e.type === 'message' && e.message.role === 'assistant') {
       const m = e.message as AssistantMessage;
       input += m.usage.input;

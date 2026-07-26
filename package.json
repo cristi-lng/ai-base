@@ -1,6 +1,6 @@
 {
   "name": "ai-base",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Base AI tools for pi",
   "keywords": [
     "pi-package"
