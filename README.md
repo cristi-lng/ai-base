@@ -6,7 +6,8 @@ Generic, reusable [pi](https://github.com/earendil-works/pi) building blocks —
 
 ```bash
 # Global — writes to ~/.pi/agent/settings.json, available in every project
-pi install git:github.com/cristi-lng/ai-base@v1.0.0
+# replace vx.x.x with the desired release tag
+pi install git:github.com/cristi-lng/ai-base@vx.x.x
 ```
 
 ## Features
