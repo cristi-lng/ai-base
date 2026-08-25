@@ -1,13 +1,13 @@
 {
   "name": "ai-base",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Base AI tools for pi",
   "keywords": [
     "pi-package"
   ],
   "dependencies": {
-    "pi-web-access": "0.13.0",
-    "pi-fork": "github:elpapi42/pi-fork#4a09af4ef5276d68f0d4321d033fa0f3f0ef2954",
+    "pi-web-access": "0.24.2",
+    "pi-fork": "github:elpapi42/pi-fork#bf702b4c760cafa4156082f51893bfb36c0750e5",
     "pi-mono-sentinel": "1.13.0"
   },
   "pi": {
